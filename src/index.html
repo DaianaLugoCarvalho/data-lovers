@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>PokeLab - Data Lovers</title>
+  <title>Data Lovers - Pokelab</title>
   <link rel="shortcut icon" href="http://www.serebii.net/pokemongo/pokemon/025.png" />
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
@@ -12,51 +12,79 @@
 <body>
   <div id="root"> </div>
 
-    <header>
-      <nav>
-        <div class="nav-items">
-          <img class="logo-pokelab" src="http://www.serebii.net/pokemongo/pokemon/025.png" alt="image pikachu" />
-          <img class="logo-pokelab" src="https://fontmeme.com/permalink/190226/64d8143d729610e4de1b9977081d530b.png" alt="logo pokelab"/>
-          <img class="logo-pokelab" src="http://www.serebii.net/pokemongo/pokemon/025.png" />
+  <header>
+    <nav>
+      <div class="nav-items">
+        <img class="logo-pokelab" src="http://www.serebii.net/pokemongo/pokemon/025.png" alt="image pikachu" />
+        <img class="logo-pokelab" src="https://fontmeme.com/permalink/190226/64d8143d729610e4de1b9977081d530b.png"
+          alt="logo pokelab" />
+        <img class="logo-pokelab" src="http://www.serebii.net/pokemongo/pokemon/025.png" />
 
-          <h1 class="poke-heading">PokeLab</h1>
-          <ul class="links-header">
-            <li class="links-header-item"><a class="anchor" href="#">produtos</a></li>
-            <li class="links-header-item"><a class="anchor" href="#">contato</a></li>
-            <li class="links-header-item"><a class="anchor" href="#">sobre</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+        <h1 class="poke-heading">PokeLab</h1>
+        <ul class="links-header">
+          <li class="links-header-item"><a class="anchor" href="#">produtos</a></li>
+          <li class="links-header-item"><a class="anchor" href="#">contato</a></li>
+          <li class="links-header-item"><a class="anchor" href="#">sobre</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-      <section id="pokemons-list">
-        <div id="pokemons-div" class="pokemons"></div>
-      </section>
+  <main>
+    <section class="ordination-pokemon">
+      <select class='ordination'>
+        <option value="a-z">A - Z</option>
+        <option value="z-a">Z - A</option>
+      </select>
+    </section>
 
-      <section id="add-pokemon-section" class="add-pokemon">
-        <h3 class="add-pokemon-title">Incluir novo pokemon</h3>
-        <form id="form-add-pokemon" class="form-add-pokemon">
-          <input value="" id="pokemon-name" class="pokemon-input-style" type="text" placeholder="nome do pokemon">
-          <input value="" id="pokemon-price" class="pokemon-input-style" type="number" placeholder="número do pokemon">
-          <input value="" id="pokemon-img" class="pokemon-input-style" type="url" name=""
-            placeholder="link com foto do pokemon">
-          <input id="btn-submit" class="btn-submit-style" type="submit" value="incluir">
-        </form>
-      </section>
-    </main>
+    <section>
+      <div class='select-type-pokemon'>
+        <button class='type-pokemon-all' value="All">All</button>
+        <button class='type-pokemon-bug' value='Bug'>Bug</button>
+        <button class='type-pokemon-dragon' value='Dragon'>Dragon</button>
+        <button class='type-pokemon-electric' value='Electric'>Electric</button>
+        <button class='type-pokemon-fighting' value='Fighting'>Fighting</button>
+        <button class='type-pokemon-fire' value='Fire'>Fire</button>
+        <button class='type-pokemon-flying' value='Flying'>Flying</button>
+        <button class='type-pokemon-ghost' value='Ghost'>Ghost</button>
+        <button class='type-pokemon-grass' value='Grass'>Grass</button>
+        <button class='type-pokemon-ground' value='Ground'>Ground</button>
+        <button class='type-pokemon-normal' value='Normal'>Normal</button>
+        <button class='type-pokemon-poison' value='Poison'>Poison</button>
+        <button class='type-pokemon-psychic' value='Psychic'>Psychic</button>
+        <button class='type-pokemon-rock' value='Rock'>Rock</button>
+        <button class='type-pokemon-water' value='Water'>Water</button>
+      </div>
+    </section>
 
-    <footer class="footer">
-      <ul class="links-footer">
-        <h3>Pokemon nas redes sociais:</h3>
-        <li><a class="anchor" href="#">mapa do site</a></li>
-        <li><a class="anchor" href="#">contato</a></li>
-        <li><a class="anchor" href="#">franquias</a></li>
-      </ul>
-    </footer>
-    <script type="text/javascript" src="data/pokemon/pokemon.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-  
+    <section id="pokemons-list">
+      <div id="pokemons-div" class="pokemons"></div>
+    </section>
+
+    <section id="add-pokemon-section" class="add-pokemon">
+      <h3 class="add-pokemon-title">Incluir novo pokemon</h3>
+      <form id="form-add-pokemon" class="form-add-pokemon">
+        <input value="" id="pokemon-name" class="pokemon-input-style" type="text" placeholder="nome do pokemon">
+        <input value="" id="pokemon-price" class="pokemon-input-style" type="number" placeholder="número do pokemon">
+        <input value="" id="pokemon-img" class="pokemon-input-style" type="url" name=""
+          placeholder="link com foto do pokemon">
+        <input id="btn-submit" class="btn-submit-style" type="submit" value="incluir">
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <ul class="links-footer">
+      <h3>Pokemon nas redes sociais:</h3>
+      <li><a class="anchor" href="#">mapa do site</a></li>
+      <li><a class="anchor" href="#">contato</a></li>
+      <li><a class="anchor" href="#">franquias</a></li>
+    </ul>
+  </footer>
+  <script type="text/javascript" src="data/pokemon/pokemon.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+
 </body>
 
 </html>
