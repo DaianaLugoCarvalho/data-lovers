@@ -20,9 +20,20 @@ function showPokemon() {
       <p>${pokemon["num"]}</p>
       </div>
   </div>
-`)
-    }`
+`).join("")}
+    `
 }
+
+/* nomes dos pokemons */
+const namePokemon = POKEMON.pokemon;
+namePokemon.map(elem => console.log("passou pelo teste nomes",elem.name));
+console.log("passou pelo teste dos nomes",namePokemon);
+
+/* nomes dos tipos */
+
+const nameTypes = POKEMON.pokemon;
+nameTypes.map(elem => console.log("passou pelo teste tipo",elem.type));
+console.log("passou pelo teste dos tipos",teste);
 
 
 
