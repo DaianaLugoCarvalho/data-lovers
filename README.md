@@ -1,14 +1,28 @@
-# Data Lovers
+# Data Lovers - Pokémon
+Dupla: *Daiana Lugo Carvalho & Yara Guimarães de Oliveira*
 
-Primeiro projeto desenvolvido para o curso de Desenvolvedora Front-End no Bootcamp **Laboratória** - campus SP - Brasil.
+[Link da aplicação](https://yaoliveira.github.io/data-lovers-pokemon/)
+
+Segundo projeto desenvolvido no curso de Desenvolvedoras Front-End para o Bootcamp **Laboratória** - campus SP - Brasil.
+
+
+## Índice
+
+* [Organização](#organização)
+* [Checklist](#checklist)
+* [Personas](#persona)
+* [Definição do produto](#definição-do-produto)
+* [Protótipo](#protótipo)
+* [Testes de usabilidade](#testes-de-usabilidade)
+
 
 ## A organização
 
 No primeiro sprint foi utilizado a ferramenta **Trello**.
 
-Em ambas situações, dividimos o projeto em mini partes e as mesmas foram priorizadas utilizando **x quantidade critérios**: o que era necessário para formar o _esqueleto_ do site e o que "nós" como desenvolvedoras tínhamos mais facilidade em desenvolver, deixando o que demandaria mais tempo de aprendizagem e de desenvolvimento por último. Todos os itens tinham data definida / prevista para término.
+Em ambas situações, dividimos o projeto em mini partes e as mesmas foram divididas entre as integrantes da dupla. Foram priorizadas utilizando 2 critérios principais: o que era necessário para formar o _esqueleto_ do site e o que "nós" como desenvolvedoras tínhamos mais facilidade em programar, deixando o que demandaria mais tempo de aprendizagem e de desenvolvimento por último. Todos os itens possuiam data definida para o término.
 
-![Trello Data Lovers](https://trello.com/invite/b/qJ3Bf00s/8a48912b62a88909ed1dbd86afe2aa93/data-lovers)
+[Trello Data Lovers](https://trello.com/invite/b/qJ3Bf00s/8a48912b62a88909ed1dbd86afe2aa93/data-lovers)
 
 ## Checklist
 
@@ -23,16 +37,37 @@ Em ambas situações, dividimos o projeto em mini partes e as mesmas foram prior
   (asc e desc).
 * [ ] UI: Permite filtrar os dados com base em uma condição.
 
+## Personas
+
+![Bruno](docs/person-bruno.png)
+![Neyde](docs/person-neyde.png)
+
+## Definição do produto
+
+**Pokelab** é um site focado nos jogadores do Pokémon GO, onde possibilita buscas por ordem alfabética e por tipo.
+
+O objetivo da aplicação é oferecer uma interface intuitiva e divertida que proporcione ao usuário uma ferramenta de pesquisa e consulta e traga informações relevantes sobre os Pokémons.
 
 
-#### Protótipo
-[Link do Protótipo](https://marvelapp.com/b2cg16h)
+## Protótipo
+[Link do 1º Protótipo - Marvel](https://marvelapp.com/b2cg16h)
 
 Durante seu trabalho você deverá ter feito esboços de sua solução usando papel
 e lápis. Recomendamos que você tire fotos de todas as iterações que faça, suba
 para seu repositório, e as mencione em seu`README.md`. Caso queira, pode
 desenhar protótipos de média fidelidade usando o [Marvel](https://marvelapp.com/)
 ou o [Figma](https://www.figma.com/).
+
+## Testes de Usabilidade
+
+
+
+
+
+
+
+
+
 
 
 ## Índice
