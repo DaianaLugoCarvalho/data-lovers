@@ -1,7 +1,8 @@
 # Data Lovers - Pokémon
 Dupla: *Daiana Lugo Carvalho & Yara Guimarães de Oliveira*
 
-[Link da aplicação](https://daianalugocarvalho.github.io/data-lovers-pokemon/)
+[Link da aplicação](https://daianalugocarvalho.github.io/data-lovers/)
+
 
 Segundo projeto desenvolvido no curso de Desenvolvedoras Front-End para o Bootcamp **Laboratória** - campus SP - Brasil.
 
@@ -43,6 +44,7 @@ Em ambas situações, dividimos o projeto em mini partes e as mesmas foram divid
 ![Neyde](docs/person-neyde.png)
 ![Gabriel](docs/person-gabriel.png)
 ![Júlia](docs/person-julia.png)
+
 
 ## Definição do produto
 
