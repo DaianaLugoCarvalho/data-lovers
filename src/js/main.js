@@ -1,16 +1,59 @@
 window.onload = function () {
-  showPokemon();
+  showPokemon(getPokemons());
 };
 
 function getPokemons() {
   return POKEMON["pokemon"];
 }
-console.log("Lista de Pokemons", getPokemons());
 
-function showPokemon() {
+function compareName(a, b) {
+  if (a.name < b.name)
+    return -1;
+  if (a.name > b.name)
+    return 1;
+  return 0;
+}
+
+function sortArrayByName(arrayOriginal) {
+  return arrayOriginal.slice(0).sort(compareName);
+}
+
+let sortMenu = document.getElementById('sort-menu');
+sortMenu.addEventListener('change', function (event) {
+  if (event.target.value === 'a-z') {
+    const ordenaredPokemon = sortArrayByName(getPokemons());
+    showPokemon(ordenaredPokemon);
+    console.log("order", ordenaredPokemon);
+  } else if (event.target.value === 'z-a') {
+    const orderReverse = sortArrayByName(getPokemons()).reverse();
+    showPokemon(orderReverse);
+  }
+  else if (event.target.value === 'none-order') {
+    const orderId = showPokemon(getPokemons());
+    showPokemon(orderId);
+  }
+})
+
+let orderTypes = document.getElementById('types-menu');
+orderTypes.addEventListener('change', function orderType() {
+  getPokemons().filter((elem) => {
+    
+    elem.type.filter((ele) => {
+      if (event.target.value === ele) {
+        const orderTypePoke = orderType(getPokemons());
+        console.log("antes",ele)
+      }
+    }
+    )
+  }
+  )
+  showPokemon(orderTypePoke);
+})
+
+function showPokemon(anyArray) {
   let pokemonsDiv = document.getElementById("pokemons-div");
   pokemonsDiv.innerHTML = `
-  ${getPokemons().map((pokemon) => `
+  ${anyArray.map((pokemon) => `
   <div class="pokemon-item">
       <img src="${pokemon["img"]}" class="pokemon-img" />
       <div class="text-name">
@@ -24,66 +67,3 @@ function showPokemon() {
     `
 }
 
-/* nomes dos pokemons */
-const namePokemon = POKEMON.pokemon;
-namePokemon.map(elem => console.log("passou pelo teste nomes",elem.name));
-console.log("passou pelo teste dos nomes",namePokemon);
-
-/* nomes dos tipos */
-
-const nameTypes = POKEMON.pokemon;
-nameTypes.map(elem => console.log("passou pelo teste tipo",elem.type));
-console.log("passou pelo teste dos tipos",teste);
-
-
-
-// function showPokemon(){
-//   let pokemonsDiv = document.getElementById("pokemons-div");
-//   pokemonsDiv.innerHTML = `
-//    ${getProducts().map((pokemon) => `
-//       <div class="pokemon-item">
-//         <img src="${pokemon["img"][0]}" class="pokemon-img" />
-//         <div class="text-name">
-//           <h3 class="pokemon-name">${pokemon["name"]}</h3>
-//         </div>
-// //         <div class="text-price">
-// //           <p class="product-price">${Number(produto["product"]["price"]["value"]).toLocaleString('pt-br', { minimumFractionDigits: 2 , style: 'currency', currency: 'BRL' })}</p>
-// //         </div>
-// //       </div>
-//       `).join("")}
-//   `
-// }
-
-
-
-  // const btnSubmit = document.getElementById("btn-submit");
-
-  // btnSubmit.addEventListener("click", function(e){
-  //   let inputPokemonNome = document.getElementById("pokemon-name").value;
-  //   let inputPokemonNumber = document.getElementById("pokemon-number").value;
-  //   let inputPokemonFoto = document.getElementById("pokemon-img").value;
-
-  //   let novoItem = {
-  //     "pokemon": {
-  //       "name": "",
-  //       "images": [],
-  //       "number": {
-  //         "value": 0,
-  //       },
-  //     },
-  //   };
-
-  //   novoItem["pokemon"]["name"] = inputPokemonNome;
-  //   novoItem["pokemon"]["price"]["value"] = inputPokemonNumber;
-  //   novoItem["product"]["images"].push(inputPokemonFoto);
-
-  //   POKEMON["pokemon"].push(novoItem);
-  //   showProducts();
-  //   resetForm(document.getElementById("form-add-pokemon"));
-  //   e.preventDefault();
-
-  // });
-
-  // function resetForm(form){
-  //   form.reset();
-  // }
