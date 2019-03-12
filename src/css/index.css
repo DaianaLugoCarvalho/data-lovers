@@ -27,7 +27,7 @@
 }
 
 #sort-menu, #types-menu {
-    width: 20vh;
+    width: 33vh;
     height: 2em;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -44,7 +44,7 @@
 #main {
     display: flex;
     justify-content: center;
-    
+      
 }
 
 #types {
@@ -58,8 +58,8 @@
 }
 
 .container-pokemons-panel{
-    height: 300px;
-    width: 70%;
+    height: 70vh;
+    width: 70vw;
     overflow: auto;
     background-color: #A3C7FD;
     border-radius: 0 0 10px 10px;
@@ -97,14 +97,30 @@
     align-items: baseline;
     padding: 10px 0 0 0;
  }
+
  #footer{
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
     background-color: yellow;
+    height: 7vh;
+    width: 100vw;
 
  }
+ #footer ul li { 
+     display: inline;
+     padding: 3em;   
+}
 
+#footer ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #2C6DB9;
+    text-decoration: none; 
+}
+
+ 
  
 
 

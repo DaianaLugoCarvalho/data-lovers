@@ -35,19 +35,17 @@ sortMenu.addEventListener('change', function (event) {
 })
 
 let orderTypes = document.getElementById('types-menu');
-orderTypes.addEventListener('change', function orderType() {
-  getPokemons().filter((elem) => {
-    
-    elem.type.filter((ele) => {
-      if (event.target.value === ele) {
-        const orderTypePoke = orderType(getPokemons());
-        console.log("antes",ele)
-      }
-    }
-    )
-  }
-  )
-  showPokemon(orderTypePoke);
+orderTypes.addEventListener('change', function orderType(event) {
+  const pokeTypes = getPokemons().filter((pokemon) => {
+    const temOTipo = pokemon.type.find((element) => {
+      return (event.target.value === element)
+    });
+    if(temOTipo) {
+      return pokemon
+    } 
+  });
+  console.log(pokeTypes)
+  showPokemon(pokeTypes);
 })
 
 function showPokemon(anyArray) {
@@ -66,4 +64,8 @@ function showPokemon(anyArray) {
 `).join("")}
     `
 }
+
+
+ 
+
 
