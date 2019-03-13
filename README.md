@@ -54,8 +54,8 @@ O objetivo da aplicação é oferecer uma interface intuitiva e divertida que pr
 
 
 ## Protótipo
-[Link do 1º Protótipo - Marvel](https://marvelapp.com/b2cg16h)
-[Link do 2º Protótipo - Marvel](https://marvelapp.com/b2cg16h)
+[Link do 1º Protótipo - Marvel](https://marvelapp.com/b2cg16h)<br>
+[Link do 2º Protótipo - Marvel](https://marvelapp.com/b55i1ia)
 
 
 ## Testes de Usabilidade
