@@ -119,6 +119,10 @@
     border-bottom:3px solid #2C6DB9;
     text-decoration: none; 
 }
+#columnchart_material{
+    width: 80vw; 
+    height: 50vh;
+}
 
  
  

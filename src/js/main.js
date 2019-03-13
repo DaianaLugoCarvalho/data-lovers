@@ -23,7 +23,7 @@ sortMenu.addEventListener('change', function (event) {
   if (event.target.value === 'a-z') {
     const ordenaredPokemon = sortArrayByName(getPokemons());
     showPokemon(ordenaredPokemon);
-    console.log("order", ordenaredPokemon);
+  
   } else if (event.target.value === 'z-a') {
     const orderReverse = sortArrayByName(getPokemons()).reverse();
     showPokemon(orderReverse);
@@ -44,7 +44,7 @@ orderTypes.addEventListener('change', function orderType(event) {
       return pokemon
     } 
   });
-  console.log(pokeTypes)
+  
   showPokemon(pokeTypes);
 })
 
